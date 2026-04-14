@@ -1,0 +1,8 @@
+.env
+.env.notifier
+.venv/
+__pycache__/
+*.pyc
+login.log
+alerts.db
+notifier.log

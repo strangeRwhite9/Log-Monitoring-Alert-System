@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Success | Flask Security Demo{% endblock %}
+{% block heading %}Login Successful{% endblock %}
+
+{% block content %}
+<div class="success-panel">
+    <p>You logged in with the hardcoded test account.</p>
+    <p><strong>Email:</strong> {{ email }}</p>
+    <p><strong>IP address captured:</strong> {{ ip_address }}</p>
+    <a class="secondary-link" href="{{ url_for('main.login') }}">Return to login</a>
+</div>
+{% endblock %}
