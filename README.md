@@ -250,12 +250,3 @@ For better persistence on Render, attach a disk and set:
 ALERT_DB_FILE=/var/data/alerts.db
 ```
 
-## Quick workflow summary
-
-1. Deploy Flask app to Render.
-2. Set `NOTIFIER_API_TOKEN` in Render.
-3. On your PC, create `.env.notifier`.
-4. Put `strangerwhite9@gmail.com` and your Gmail app password only in `.env.notifier`.
-5. Run `python3 local_notifier.py --poll` on your machine.
-
-This way your deployed app never sees your Gmail password.
