@@ -28,10 +28,10 @@
 </form>
 
 <div class="helper-panel">
-    <h2>Test account</h2>
-    <p>Email: <strong>{{ config.VALID_TEST_EMAIL }}</strong></p>
-    <p>Password: <strong>{{ config.VALID_TEST_PASSWORD }}</strong></p>
-    <p>Every failed login stores the email, IP address, and timestamp in <code>login.log</code>.</p>
-    <p>Queued alerts are picked up by the separate local notifier app, so Gmail credentials stay off the deployed server.</p>
+    <h2>What this system does</h2>
+    <p>This security monitoring system checks login attempts and captures the client IP address for every request.</p>
+    <p>If a login fails, it records the email, IP address, and timestamp in <code>login.log</code> for review.</p>
+    <p>Repeated failures from the same IP are tracked to help detect suspicious activity such as brute-force attacks.</p>
+    <p>Alert emails are sent by a separate local notifier app, so Gmail credentials stay off the deployed server.</p>
 </div>
 {% endblock %}
